@@ -1,0 +1,51 @@
+export const services = [
+    {
+        id: 1,
+        icon: "/assets/images/icons/icon-7.svg",
+        title: "Social Media Marketing",
+        content: "Grow your brand with targeted strategies, engaging content, and consistent audience interaction.",
+        speed: "slow",
+        link: "single_services",
+    },
+    {
+        id: 2,
+        icon: "/assets/images/icons/icon-6.svg",
+        title: "Branding & Design",
+        content: "Craft a powerful brand identity with striking visuals and messaging that truly sets you apart.",
+        speed: "normal",
+        link: "single_services",
+    },
+    {
+        id: 3,
+        icon: "/assets/images/icons/icon-4.svg",
+        title: "Web Development",
+        content: "Build fast, modern, conversion-focused websites that elevate your digital presence and drive results.",
+        speed: "fast",
+        link: "single_services",
+    },
+    {
+        id: 4,
+        icon: "/assets/images/icons/icon-0.svg",
+        title: "Content Marketing",
+        content: "Create high-value content that attracts, educates, and converts your ideal customers effortlessly.",
+        speed: "normal",
+        link: "single_services",
+    },
+    {
+        id: 5,
+        icon: "/assets/images/icons/icon-8.svg",
+        title: "PPC Advertising",
+        content: "Run data-driven campaigns that deliver instant traffic, high-quality leads, and measurable ROI.",
+        speed: "fast",
+        link: "single_services",
+    },
+    {
+        id: 6,
+        icon: "/assets/images/icons/icon-5.svg",
+        title: "Email Marketing",
+        content: "Send personalized, high-impact emails that nurture leads, build loyalty, and drive conversions.",
+        speed: "slow",
+        link: "single_services",
+    },
+    
+];

@@ -1,0 +1,58 @@
+export const testimonials = [
+    {
+        id: 1,
+        name: "Vellar",
+        content: "Our website finally feels modern and reliable thanks to Resometa. The team handled all technical work smoothly and delivered exactly what we needed.",
+        rating: 5,
+        image: "/assets/images/testimonial/vellar.png",
+    },
+    {
+        id: 2,
+        name: "Gold Gym",
+        content: "The ad creativity and gym-specific campaigns helped us generate quality leads quickly. Strong performance overall!",
+        rating: 5,
+        image: "/assets/images/testimonial/gold.png",
+    },
+    {
+        id: 3,
+        name: "Utsaah",
+        content: "Resometa brought a premium, elegant feel to our brand identity. Their campaigns matched the luxury positioning we wanted.",
+        rating: 5,
+        image: "/assets/images/testimonial/utsaah.png",
+    },
+    {
+        id: 4,
+        name: "Experion",
+        content: "Resometa built structured corporate-focused content for us with precision and professionalism.",
+        rating: 5,
+        image: "/assets/images/testimonial/experion.png",
+    },
+    {
+        id: 5,
+        name: "Bestech",
+        content: "The real estate marketing content delivered by Resometa was polished, impactful, and perfectly aligned with our brand.",
+        rating: 5,
+        image: "/assets/images/testimonial/bestech.png",
+    },
+    {
+        id: 6,
+        name: "Signature Global",
+        content: "Resometa captured our project stories with premium visuals and messaging. Excellent work across digital assets.",
+        rating: 5,
+        image: "/assets/images/testimonial/signature.png",
+    },
+    {
+        id: 7,
+        name: "GAV School",
+        content: "Resometa’s marketing strategy helped us connect better with parents and students. Their academic branding approach is thoughtful and effective.",
+        rating: 5,
+        image: "/assets/images/testimonial/gav.png",
+    },
+    {
+        id: 8,
+        name: "SK27 Gym",
+        content: "From brand videos to hyperlocal ads, Resometa has elevated our brand image across all branches. Exceptional creative direction and performance marketing!",
+        rating: 5,
+        image: "/assets/images/testimonial/sk27.png",
+    },
+];
