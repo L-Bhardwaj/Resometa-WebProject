@@ -2,6 +2,7 @@
 import React, { useRef } from "react";
 import VideoButton from "../Video/VideoButton";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
+import DustOrb from "../DustOrb/DustOrb";
 
 
 function BannerHomeSection() {
@@ -24,7 +25,19 @@ function BannerHomeSection() {
                     {/* ROBOT (TOP LAYER) */}
                     <div id="robot-layer" className="robot">
                         <spline-viewer url="https://prod.spline.design/AqtlWJlNbO-ZMkvz/scene.splinecode?logo=0"></spline-viewer>
+
+                        <div className="get-started-btn">
+                                    <a href="/contact" className="btn btn-accent">
+                                    <div className="btn-title">
+                                    <span>Get Started</span>
+                                    </div>
+                                    <div className="icon-circle">
+                                    <i className="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                                </div>
                     </div>
+
 
                     {/* TEXT (behind robot) */}
                     <div className="hero-container position-relative">
@@ -34,6 +47,8 @@ function BannerHomeSection() {
                                 <h1 className="title-heading-banner">
                                     DOMINATE DIGITALLY & UNLOCK EXCEPTIONAL GROWTH!
                                 </h1>
+
+                                
                             </AnimateOnScroll>
 
                             {/* <div className="banner-heading">
@@ -85,10 +100,30 @@ function BannerHomeSection() {
                                 </AnimateOnScroll>
 
                             </div> */}
+
+                            <div className="cta-orb-wrapper">
+                                <div className="get-started-btn-mobile">
+                                    <a href="/contact" className="btn btn-accent">
+                                        <div className="btn-title">
+                                        <span>Get Started</span>
+                                        </div>
+                                        <div className="icon-circle">
+                                        <i className="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div className="mobile-orb">
+                                    <DustOrb />
+                                </div>
+                            </div>
+                        
+                                
+                            
                         </div>
                     </div>
-
-                </div>
+                    
+                </div> 
             </AnimateOnScroll>
         </div>
     );

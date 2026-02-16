@@ -12,6 +12,7 @@ function AboutSection(){
                             <AnimateOnScroll animation="fadeInUp" speed="normal">
                             <img
                                 src="/assets/images/about/aboutusimg.webp"
+                                loading="lazy"
                                 alt="About Us Image"
                                 className="img-fluid"
                             />

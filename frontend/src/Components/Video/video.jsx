@@ -23,6 +23,7 @@ function ModalVideoSection() {
             id="my-video-frame"
             src={videoUrl}
             allowFullScreen
+            loading="lazy"
             title="Video"
             ></iframe>
         </div>

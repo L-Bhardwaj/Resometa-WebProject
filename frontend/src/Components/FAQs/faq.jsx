@@ -1,56 +1,46 @@
-import React from "react";
-import { faqData } from "../../Data/FaqData";
+import { useState } from "react";
 
-const FaqSection = () => {
+
+const FAQ = ({ title, subtitle, faqs }) => {
+  const [openId, setOpenId] = useState(null);
+
+  const handleToggle = (id) => {
+    setOpenId(openId === id ? null : id);
+  };
+
   return (
-    <div className="section">
-        <div className="hero-container">
-            <div className="row row-cols-lg-2 row-cols-1 grid-spacer-5">
-                <div className="col col-lg-5">
-                    <div className="faq-title-container">
-                        <div className="sub-heading">
-                            <i className="fa-regular fa-circle-dot"></i>
-                            <span>Frequently Asked Questions</span>
-                        </div>
-                        <h2 className="title-heading">Got Questions? We've Got Answers.</h2>
-                    </div>
-                </div>
-                <div className="col col-lg-7">
-                    <div className="d-flex flex-column">
-                        <div className="accordion" id="faqAccordion">
-                            {faqData.map((item, index) => (
-                                <div className="accordion-item" key={item.id}>
-                                    <h2 className="accordion-header">
-                                    <button
-                                        className={`accordion-button ${index !== 0 ? "collapsed" : ""}`}
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target={`#faq${item.id}`}
-                                        aria-expanded={index === 0 ? "true" : "false"}
-                                        aria-controls={`faq${item.id}`}
-                                    >
-                                        {item.question}
-                                    </button>
-                                    </h2>
-                                    <div
-                                    id={`faq${item.id}`}
-                                    className={`accordion-collapse collapse ${index === 0 ? "show" : ""}`}
-                                    data-bs-parent="#faqAccordion"
-                                    >
-                                        <div className="accordion-body">
-                                            <div className="accordion-spacer"></div>
-                                            <p>{item.answer}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
+    <section className="resometa-faq-wrapper">
+      {/* Header */}
+      <div className="resometa-faq-header">
+        <h2 className="resometa-faq-title">{title}</h2>
+        <p className="resometa-faq-subtitle">{subtitle}</p>
+      </div>
+
+      {/* FAQ Cards */}
+      <div className="resometa-faq-list">
+        {faqs.map((faq) => (
+          <div
+            key={faq.id}
+            className={`resometa-faq-card ${
+              openId === faq.id ? "active" : ""
+            }`}
+            onClick={() => handleToggle(faq.id)}
+          >
+            <div className="resometa-faq-question-row">
+              <h3 className="resometa-faq-question">{faq.question}</h3>
+              <span className="resometa-faq-icon">
+                {openId === faq.id ? "−" : "+"}
+              </span>
             </div>
-        </div>
-    </div>
+
+            <div className="resometa-faq-answer-wrapper">
+              <p className="resometa-faq-answer">{faq.answer}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 
-export default FaqSection;
+export default FAQ;

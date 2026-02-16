@@ -1,0 +1,38 @@
+User-agent: *
+
+# =============================
+# PUBLIC PAGES (IMPORTANT)
+# =============================
+Allow: /
+Allow: /about
+Allow: /service
+Allow: /pricing
+Allow: /testimonial
+Allow: /contact
+Allow: /services/video-editing
+
+Allow: /privacypolicy
+Allow: /terms-and-conditions
+
+# =============================
+# PRIVATE AREAS
+# =============================
+Disallow: /admin/
+Disallow: /dashboard/
+
+# =============================
+# SYSTEM & APIs
+# =============================
+Disallow: /api/
+Disallow: /auth/
+
+# =============================
+# SEARCH & FILTERS (avoid duplicates)
+# =============================
+Disallow: /search
+Disallow: /*?*
+
+# =============================
+# SITEMAP LOCATION
+# =============================
+Sitemap: https://resometa.com/sitemap.xml

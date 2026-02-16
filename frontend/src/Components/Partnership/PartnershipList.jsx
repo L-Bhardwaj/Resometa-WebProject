@@ -27,6 +27,7 @@ const PartnershipListSection = () => {
                                         <img
                                         src={partner.logo}
                                         alt="Partner Logo"
+                                        loading="lazy"
                                         className="partner-logo img-fluid"
                                         />
                                     </a>

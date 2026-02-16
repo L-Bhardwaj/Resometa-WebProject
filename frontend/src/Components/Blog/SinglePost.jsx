@@ -19,6 +19,7 @@ const BlogPostSection = () => {
                                     <img
                                         src={blog.image}
                                         alt={blog.title}
+                                        loading="lazy"
                                         className="img-fluid"
                                     />
                                     </div>

@@ -10,7 +10,7 @@ const ServiceCard = ({icon, title, content, link, speed = ""}) => {
                         <div>
                             <div className="service-icon-wrapper">
                                 <div className="service-icon">
-                                    <img src={icon} alt="Service Icon" className="img-fluid" />
+                                    <img src={icon} alt="Service Icon" loading="lazy" className="img-fluid" />
                                 </div>
                             </div>
                         </div>

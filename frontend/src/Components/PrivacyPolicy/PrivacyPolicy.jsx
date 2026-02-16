@@ -7,10 +7,10 @@ export default function PrivacyPolicy() {
 
         {/* HEADER */}
         <div className="text-center gspace-2" style={{ marginBottom: "40px" }}>
-          <div className="sub-heading">
+          {/* <div className="sub-heading">
             <i className="fa-regular fa-circle-dot"></i>
             <span>Privacy Policy</span>
-          </div>
+          </div> */}
 
           <h2 className="title-heading heading-container heading-container-short">
             PRIVACY POLICY — RESOMETA TECHNOLOGIES PVT. LTD.

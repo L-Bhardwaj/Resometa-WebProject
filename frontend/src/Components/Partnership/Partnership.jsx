@@ -70,6 +70,7 @@ const PartnershipSection = () => {
                         <img
                           src={partner.logo}
                           alt="Client Logo"
+                          loading="lazy"
                           className="partner-logo img-fluid"
                         />
                       </div>

@@ -11,8 +11,8 @@ function GuideBannerSection(){
                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                             <div className="guide-content">
                                 <div className="guide-video-container">
-                                    <VideoButton videoUrl="https://www.youtube.com/embed/VhBl3dHT5SY?autoplay=1" />
-                                    <p>See How We Help Brands Grow</p>
+                                    {/* <VideoButton videoUrl="https://www.youtube.com/embed/VhBl3dHT5SY?autoplay=1" /> */}
+                                    {/* <p>See How We Help Brands Grow</p> */}
                                 </div>
                                 <div className="d-flex flex-column gspace-2">
                                     <h3 className="title-heading">Transform Your Business with Resometa!</h3>

@@ -36,7 +36,7 @@ function ChooseUsAboutSection(){
                                     </div>
                                 </AnimateOnScroll>
                                 <div className="image-container">
-                                    <img src="/assets/images/ChooseUs/chooseUs.png" alt="Why Choose Us Image" className="chooseus-img" />
+                                    <img src="/assets/images/ChooseUs/chooseUs.webp" alt="Why Choose Us Image" loading="lazy" className="chooseus-img" />
                                     <div className="card-chooseus-cta-layout">
                                         <div className="chooseus-cta-spacer"></div>
                                         <div className="d-flex flex-column align-items-end">

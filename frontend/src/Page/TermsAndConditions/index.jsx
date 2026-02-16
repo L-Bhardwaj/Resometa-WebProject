@@ -1,12 +1,16 @@
-import HeadTitle from "../../Components/Head/HeadTitle";
-import BannerInnerSection from "../../Components/Banner/Inner";
+import { useSEO } from "../../seo/useSEO";
+
 import TermsAndConditionsSection from "../../Components/TermsAndConditions/TermsAndConditions";
 
 function TermsAndConditionsPage(){
+    useSEO({
+    title: "Terms & Conditions - Best Digital Marketing Services | Resometa",
+    description:
+      "Resometa is a digital marketing and web development agency specializing in Social Media and Performance Marketing solutions. "
+  });
+
     return(
         <>
-            <HeadTitle title="Terms & Conditions - Resometa"/>
-            <BannerInnerSection title="Terms & Conditions" currentPage="Terms & Conditions" />
             <TermsAndConditionsSection />
         </>
     );

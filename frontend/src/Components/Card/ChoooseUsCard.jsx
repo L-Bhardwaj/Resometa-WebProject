@@ -11,7 +11,7 @@ const ChooseUsCard = ({icon, title, content, link, speed}) => {
                         <div className="chooseus-spacer above"></div>
                             <div className="chooseus-icon-layout">
                                 <div className="chooseus-icon">
-                                    <img src={icon} alt="Why Choose Us Icon" className="img-fluid" />
+                                    <img src={icon} alt="Why Choose Us Icon" loading="lazy" className="img-fluid" />
                                 </div>
                             </div>
                         <div className="chooseus-spacer below"></div>

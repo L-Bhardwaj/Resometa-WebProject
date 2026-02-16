@@ -7,10 +7,10 @@ export default function TermsAndConditions() {
 
         {/* HEADER */}
         <div className="text-center gspace-2" style={{ marginBottom: "40px" }}>
-          <div className="sub-heading">
+          {/* <div className="sub-heading">
             <i className="fa-regular fa-circle-dot"></i>
             <span>Terms & Conditions</span>
-          </div>
+          </div> */}
 
           <h2 className="title-heading heading-container heading-container-short">
             TERMS & CONDITIONS — RESOMETA TECHNOLOGIES PVT. LTD.

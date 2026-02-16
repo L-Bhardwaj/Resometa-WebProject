@@ -11,6 +11,7 @@ const SingleServiceSection = () => {
                         <img
                         src="/assets/images/dummy-img-600x400.jpg"
                         alt="Service Image"
+                        loading="lazy"
                         className="single-service-img"
                         />
                         <div className="single-service-title-layout">
@@ -52,6 +53,7 @@ const SingleServiceSection = () => {
                                         <img
                                             src="/assets/images/dummy-img-600x400.jpg"
                                             alt="Service Image"
+                                            loading="lazy"
                                             className="img-fluid"
                                         />
                                         </div>
@@ -61,6 +63,7 @@ const SingleServiceSection = () => {
                                         <img
                                             src="/assets/images/dummy-img-600x400.jpg"
                                             alt="Service Image"
+                                            loading="lazy"
                                             className="img-fluid"
                                         />
                                         </div>

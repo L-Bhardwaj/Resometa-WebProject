@@ -153,7 +153,7 @@ export default function ContactForm() {
         {submitError && (
           <div className="alert error">
             <span className="cross-icon"><i className="fa-solid fa-xmark"></i></span>
-            <p className="text-center">Please fix the errors below.</p>
+            <p className="text-center">Please fill the missing fields.</p>
           </div>
         )}
 

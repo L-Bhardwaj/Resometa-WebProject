@@ -11,7 +11,7 @@ const Footer = () => {
                             <div className="col col-lg-4">
                                 <div className="footer-logo-container">
                                     <div className="logo-container-footer">
-                                    <img src="/assets/images/Logo/logo3.png" alt="Logo" className="site-logo img-fluid" />
+                                    <img src="/assets/images/Logo/logo3.png" alt="Logo" loading="lazy" className="site-logo img-fluid" />
                                     </div>
                                     <h4>Reach the Right Audience</h4>
                                     <p>
@@ -55,29 +55,29 @@ const Footer = () => {
                                         <li>info@resometa.com</li>
                                         <li>+91 8368755187</li>
                                         <li>ILD Trade Centre, 4th Floor
-Near Subhash Chowk, Sector 47
-Gurugram, Haryana</li>
+                                            Near Subhash Chowk, Sector 47
+                                            Gurugram, Haryana</li>
                                     </ul>
                                     <div className="d-flex flex-column gspace-1">
                                         <h5>Social Media</h5>
                                         <div className="social-container">
                                             <div className="social-item-wrapper">
-                                                <a href="https://facebook.com" className="social-item">
+                                                <a href="https://www.facebook.com/share/1Ci8xVNmQT/" className="social-item" target="_blank">
                                                     <i className="fa-brands fa-facebook"></i>
                                                 </a>
                                             </div>
-                                            <div className="social-item-wrapper">
+                                            {/* <div className="social-item-wrapper">
                                                 <a href="https://youtube.com" className="social-item">
                                                     <i className="fa-brands fa-youtube"></i>
                                                 </a>
-                                            </div>
+                                            </div> */}
                                             <div className="social-item-wrapper">
-                                                <a href="https://instagram.com" className="social-item">
+                                                <a href="https://www.instagram.com/resometaofficial?igsh=eGRoMmgwamJtcjZr&utm_source=qr" className="social-item" target="_blank">
                                                     <i className="fa-brands fa-instagram"></i>
                                                 </a>
                                             </div>
                                             <div className="social-item-wrapper">
-                                                <a href="https://linkedin.com" className="social-item">
+                                                <a href="https://www.linkedin.com/company/resometa/" className="social-item" target="_blank">
                                                     <i className="fa-brands fa-linkedin"></i>
                                                 </a>
                                             </div>
@@ -91,7 +91,7 @@ Gurugram, Haryana</li>
                     </div>
 
                     <div className="copyright-container">
-                        <span className="copyright">© 2025 Resometa. All Rights Reserved.</span>
+                        <span className="copyright">© {new Date().getFullYear()} Resometa. All Rights Reserved.</span>
                         <div className="d-flex flex-row gspace-2">
                             <a href="/terms-and-conditions" className="legal-link">Terms of Service</a>
                             <a href="/privacypolicy" className="legal-link">Privacy Policy</a>

@@ -14,7 +14,7 @@ function BlogCard({ blog }) {
                     onClick={handleClick}
                 >
                     <div className="blog-image">
-                        <img src={blog.image} alt="Blog" />
+                        <img src={blog.image} loading="lazy" alt="Blog" />
                     </div>
                     <div className="card-body">
                         <div className="d-flex flex-row gspace-2">

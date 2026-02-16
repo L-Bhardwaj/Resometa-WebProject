@@ -1,0 +1,18 @@
+# Node modules
+node_modules/
+
+# Environment file
+.env
+.env.production
+
+# Build folder
+dist/
+
+# Logs
+
+# logs/
+# *.log
+
+# OS files
+
+# .DS_Store

@@ -4,15 +4,15 @@
  * Copyright 2023 Fonticons, Inc.
  */
 :root, :host {
-  --fa-style-family-brands: 'Font Awesome 6 Brands';
-  --fa-font-brands: normal 400 1em/1 'Font Awesome 6 Brands'; }
+  --fa-style-family-brands: 'Josh';
+  --fa-font-brands: normal 400 1em/1 'Josh'; }
 
 @font-face {
-  font-family: 'Font Awesome 6 Brands';
+  font-family: 'Jost';
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("/assets/webfonts/fa-brands-400.woff2") format("woff2"), url("/assets/webfonts/fa-brands-400.ttf") format("truetype"); }
+  src: url("/assets/webfonts/Jost-Bold.ttf") format("truetype"); }
 
 .fab,
 .fa-brands {

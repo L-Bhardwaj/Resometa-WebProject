@@ -73,7 +73,7 @@ function Navbar() {
         {/* Logo (left) */}
         <div className="logo-container">
           <NavLink to="/" className="navbar-brand" onClick={() => setIsOpen(false)}>
-            <img src="/assets/images/Logo/logo2.png" className="" alt="Logo" />
+            <img src="/assets/images/Logo/logo2.png" className="" loading="lazy" alt="Logo" />
           </NavLink>
         </div>
 
