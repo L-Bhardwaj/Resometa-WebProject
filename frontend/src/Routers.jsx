@@ -7,6 +7,7 @@ import LandingLayout from "./Layouts/LandingLayout";
 // Pages
 // Landing Pages
 import VideoEditingServicePage from "./Page/Service/VideoEditingServices";
+import ReferralPage from "./Page/Referral";
 
 // import ResometaVideoServiceWizard from "./Components/Pricing/VideoServicePricingWizard";
 
@@ -31,6 +32,7 @@ function AppRouter() {
         <Route path="/services/video-editing" element={<VideoEditingServicePage />} />
 
         <Route path="/services/thankyou" element={<ThankYou/>} />
+        <Route path="/referral" element={<ReferralPage />} />
       </Route>
 
       {/* Main site pages (WITH Navbar/Footer) */}

@@ -35,6 +35,7 @@ app.use(express.json());
 // ===========================
 const SCRIPT_URL = process.env.SCRIPT_URL; // contact form
 const VIDEO_EDITING_QUOTATION_URL = process.env.VIDEO_EDITING_QUOTATION_URL; // video wizard form
+const REFERRAL_SCRIPT_URL = process.env.REFERRAL_SCRIPT_URL; // referral form
 
 if (!SCRIPT_URL || !VIDEO_EDITING_QUOTATION_URL) {
   console.error("❌ ERROR: Missing SCRIPT_URL or VIDEO_EDITING_QUOTATION_URL in .env");
@@ -102,6 +103,30 @@ app.post("/video-editing-quotation", async (req, res) => {
   }
 });
 
+
+// ===========================
+// REFERRAL FORM ROUTE
+// ===========================
+app.post("/referral", async (req, res) => {
+  if (!REFERRAL_SCRIPT_URL) {
+    console.warn("⚠️  REFERRAL_SCRIPT_URL not set — referral not forwarded to sheet");
+    return res.json({ success: true, message: "Referral received (no sheet configured)" });
+  }
+  try {
+    const response = await fetchFn(REFERRAL_SCRIPT_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(req.body),
+    });
+    const text = await response.text();
+    let data;
+    try { data = JSON.parse(text); } catch { data = { raw: text }; }
+    return res.json({ success: true, scriptResponse: data });
+  } catch (err) {
+    console.error("❌ Referral form error:", err);
+    return res.status(500).json({ success: false, message: "Referral submission failed" });
+  }
+});
 
 // ===========================
 // OPTIONAL: SERVER-SIDE PRICE CALCULATION (if needed)
